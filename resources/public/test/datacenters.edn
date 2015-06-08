@@ -1,0 +1,3 @@
+[{:name "Eden Prairie" :status-text "Healthy" :opstate-text "Running"}
+ {:name "Ashburn" :status-text "Failing" :opstate-text "Test"}
+ {:name "Germany" :status-text "Healthy" :opstate-text "Down"}]

@@ -1,0 +1,181 @@
+body {
+	line-height: 1em;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End of CSS Reset */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+	display: block;
+}
+body {
+	font: 12px/18px Arial, sans-serif;
+}
+.wrapper {
+	min-width: 300px;
+	max-width: 2400px;
+	margin: 0 auto;
+	background: #141414;
+}
+
+body.opc {
+	background:transparent;
+}
+
+/* Header
+-----------------------------------------------------------------------------*/
+.header {
+	height: 5em;
+	background: #1a1a1a;
+	padding-left: 5em;
+}
+
+
+/* Main Area
+-----------------------------------------------------------------------------*/
+.flexcontainer.wrap.column {
+  -webkit-flex-flow: column wrap;
+  flex-flow: column wrap;
+  -webkit-align-content: stretch;
+  align-content: stretch;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.flexcontainer.column {
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+
+.flexcontainer {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  min-height: 300px;
+  max-height: 450px;
+  background-color: #141414;
+  border: 1px solid #2a4f73;
+}
+
+.flexcontainer {
+  margin: 2rem auto;
+  max-width: 1050px;
+  min-height: 900px;
+}
+
+.flexcontainer > div {
+  height: 14em;
+  width: 38em;
+  background-color: #323232;
+  border: 1px solid #626262;
+  margin: 1em;
+  padding: 1em;
+}
+
+.statusbox {
+	padding: 30px;
+	margin: 0 !important;
+}
+
+
+
+
+/* Text Stylings
+-----------------------------------------------------------------------------*/
+h1 { font-size: 3.5em;
+	font-weight: 300;
+	font-family: 'Open Sans', sans-serif;
+	color: #78c114;
+}
+
+h2, h3, h4, h5 {
+
+}
+
+
+.opstate {
+	color: #f1f1f1 !important;
+	font-size: 1.5em;
+	text-transform: uppercase;
+	display:inline-block !important;
+	margin-top: .4em;
+}
+
+.status {
+	color: #f1f1f1 !important;
+	font-size: 1.5em;
+	text-transform: uppercase;
+	display:inline-block !important;
+	margin-top: 1.2em;
+}
+
+.statusgreen {
+	font-size: 1.5em;
+	text-transform: uppercase;
+	color: #78c114;
+	display: inline-block;
+
+}
+
+
+
+
+/* OP State Indicator
+-----------------------------------------------------------------------------*/
+
+.opc {
+	position: relative;
+	overflow: hidden;
+	width: 200px;
+	height: 200px;
+
+  	&.spacer {
+    	display: block;
+    	width: 100%;
+    	height: auto;
+  	}
+  	&.opcsprite {
+  		display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        max-width: none;
+        height: 100%;
+        
+        &.s1
+        { }
+        &.s2
+        {  left: -100%;  
+        }
+        &.s3
+        {  left: -200%;  
+        }
+    }
+}
+
+
+
+/* Footer
+-----------------------------------------------------------------------------*/
+.footer {
+	height: 2em;
+	background: #1a1a1a;
+	color: #cccccc;
+	padding-left: 2em;
+}

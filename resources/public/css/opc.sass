@@ -1,0 +1,414 @@
+/* Consulate CSS Reset
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+    margin: 0
+    padding: 0
+    border: 0
+    font-size: 100%
+    font: inherit
+    vertical-align: baseline
+    font-family: "Exo", sans-serif
+
+/* HTML5 display-role reset for old browsers
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+    display: block
+
+body
+    line-height: 1em
+
+ol, ul
+    list-style: none
+
+blockquote, q
+    quotes: none
+
+blockquote
+    &:before, &:after
+        content: ""
+        content: none
+
+q
+    &:before, &:after
+        content: ""
+        content: none
+
+table
+    border-collapse: collapse
+    border-spacing: 0
+
+/* End of CSS Reset
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary
+    display: block
+
+.body
+    font: (12px / 18px) Arial, sans-serif
+    min-height: 100%
+    padding: 0
+    margin: 0
+    background: #141414
+
+.wrapper
+    padding: 50px 0
+    position: absolute
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    background: #141414
+
+.content
+    min-height: 100%
+    background-color:green
+
+body.opc
+    background: transparent
+
+/* Header
+ *-----------------------------------------------------------------------------
+
+.header
+    height: 5em
+    background: #1a1a1a
+    padding-left: 5em
+    margin-top: -3em
+
+.consulate_logo
+    padding-top: 1.2em
+    position: absolute
+    left: 1.2em
+
+/* Main Area
+ *-----------------------------------------------------------------------------
+
+.flexcontainer
+    &.wrap.column
+        -webkit-flex-flow: column wrap
+        flex-flow: column wrap
+        -webkit-align-content: stretch
+        align-content: stretch
+        -webkit-align-items: center
+        align-items: center
+        -webkit-justify-content: center
+        justify-content: center
+    &.column
+        -webkit-flex-direction: column
+        flex-direction: column
+    display: -webkit-flex
+    display: flex
+    -webkit-flex-direction: row !important
+    flex-direction: row
+    min-height: 300px
+    max-height: 450px
+    background-color: #141414 !important
+    border: none !important
+    margin: 2rem auto
+    min-height: 900px
+    > .div
+        height: 14em
+        width: 38em
+        background-color: #323232
+        border: 1px solid #626262
+        margin: 1em
+        padding: 1em 1em 1em 1em
+        position: relative
+
+.statusbox
+    padding: 0.4em
+    margin: 0 !important
+
+.detail_button
+    float: right
+    background: #1d1d1d
+    color: #f1f1f1 !important
+    position: relative
+    text-transform: uppercase
+    font-family: "Exo", sans-serif
+    font-size: 1.1em
+    border: none !important
+
+.detail_buttons
+    float: right
+    padding: 0.8em
+    background: #1d1d1d
+    right: 1em
+    position: relative
+    margin-top: 1.5em
+    text-transform: uppercase
+    font-family: "Exo", sans-serif
+    font-size: 1.15em
+    border: none !important
+
+/* Text Stylings
+ *-----------------------------------------------------------------------------
+
+.h1
+    font-size: 3.5em
+    font-weight: 300
+    font-family: "Open Sans", sans-serif
+    color: #78c114
+
+.opstate
+    color: #f1f1f1 !important
+    font-size: 1.5em
+    text-transform: uppercase
+    display: inline-block !important
+    margin-top: 0.4em
+
+.status
+    color: #f1f1f1 !important
+    font-size: 1.5em
+    text-transform: uppercase
+    display: inline-block !important
+    margin-top: .75em
+
+.green
+    color: #78c114 !important
+
+.red
+    color: #cb2c11 !important
+
+.yellow
+    color: #ecd90b !important
+
+.status
+    font-size: 1.5em
+    text-transform: uppercase
+    display: inline-block    
+
+#columnChild86333 > p > a
+    color: #ffffff !important
+
+
+.dash_box .h1
+    margin-top: 0.3em
+    margin-left: 0.1em
+
+.dash_box p
+    margin-left: 0.45em
+
+.statustext
+    display: block
+    line-height: 1em !important
+    margin-top: 1em
+
+.optext
+    display: block
+
+body > div > div > div:nth-child(9)
+    background: #1d1d1d
+    overflow: hidden
+    position: relative
+
+.add_box a
+    color: #2d2d2d !important
+    text-decoration: none !important
+    font-weight: 700
+    font-size: 24em
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+
+#columnChild86333 a
+    text-decoration: none !important
+    color: #111111 !important
+    font-size: 1.5em
+    font-weight: 300
+    margin-left: 1em
+    padding-top: 0.5em !important
+    width: 100%
+    position: absolute
+
+#columnChild13556 a, #columnChild15745 a, #columnChild64505 a, #columnChild57871 a, #columnChild75902 a
+    text-decoration: none !important
+    color: #f1f1f1 !important
+    font-size: 1.2em
+    font-weight: 500
+    margin-left: 1em
+    padding-top: 0.8em
+    background: #333333 !important
+    position: absolute
+
+/* Flexbox
+ *-----------------------------------------------------------------------------
+ *
+ *  #flexcanvas
+ *  width: 100%
+
+.rowParent
+    display: -webkit-box
+    display: -ms-flexbox
+    display: -webkit-flex
+    display: flex
+    -webkit-box-direction: normal
+    -webkit-box-orient: horizontal
+    -webkit-flex-direction: row
+    -ms-flex-direction: row
+    flex-direction: row
+    -webkit-flex-wrap: nowrap
+    -ms-flex-wrap: nowrap
+    flex-wrap: nowrap
+    -webkit-box-pack: start
+    -webkit-justify-content: flex-start
+    -ms-flex-pack: start
+    justify-content: flex-start
+    -webkit-align-content: stretch
+    -ms-flex-line-pack: stretch
+    align-content: stretch
+    -webkit-box-align: stretch
+    -webkit-align-items: stretch
+    -ms-flex-align: stretch
+    align-items: stretch
+
+.columnParent
+    display: -webkit-box
+    display: -ms-flexbox
+    display: -webkit-flex
+    display: flex
+    -webkit-box-direction: normal
+    -webkit-box-orient: horizontal
+    -webkit-flex-direction: row
+    -ms-flex-direction: row
+    flex-direction: row
+    -webkit-flex-wrap: nowrap
+    -ms-flex-wrap: nowrap
+    flex-wrap: nowrap
+    -webkit-box-pack: start
+    -webkit-justify-content: flex-start
+    -ms-flex-pack: start
+    justify-content: flex-start
+    -webkit-align-content: stretch
+    -ms-flex-line-pack: stretch
+    align-content: stretch
+    -webkit-box-align: stretch
+    -webkit-align-items: stretch
+    -ms-flex-align: stretch
+    align-items: stretch
+    -webkit-box-orient: vertical
+    -webkit-flex-direction: column
+    -ms-flex-direction: column
+    flex-direction: column
+
+.flexChild
+    -webkit-box-flex: 1
+    -webkit-flex: 1
+    -ms-flex: 1
+    flex: 1
+    -webkit-align-self: auto
+    -ms-flex-item-align: auto
+    align-self: auto
+
+#columnChild86333
+    background: #454545 !important
+    height: 2.8em !important
+
+#columnChild13556, #columnChild15745, #columnChild64505, #columnChild57871, #columnChild75902
+    -webkit-box-flex: 0
+    -webkit-flex: 0 0 auto
+    -ms-flex: 0 0 auto
+    flex: 0 0 auto
+    height: 3em
+    background: #333333
+    border-top: solid 1px #1d1d1d
+
+#rowDownstream, #rowUpstream
+    -webkit-box-flex: 0
+    -webkit-flex: 0 0 auto
+    -ms-flex: 0 0 auto
+    flex: 0 0 auto
+    width: 25%
+    background: #1d1d1d
+
+#rowDetailView
+    padding: 3em
+
+/* Footer
+ *-----------------------------------------------------------------------------
+
+.footer
+    height: 2em
+    background: #1a1a1a
+    color: #aaaaaa
+    margin-bottom: -2em
+    padding-left: 1.2em
+    padding-top: 1em
+
+/* Operational State Circle Indicator
+ *-----------------------------------------------------------------------------
+
+.opc_holder
+    float: right
+    margin-right: 7em
+    margin-top: 0em
+
+.opc
+    position: absolute
+    transform: scale(0.3) translate(-24em, -24em)
+    overflow: hidden
+    visibility: visible
+    width: 329px
+    height: 329px
+    z-index: 987987
+    &.down2
+        .opcsprite
+            left: -0%
+    &.standby
+        .opcsprite
+            left: -329px
+    &.test
+        .opcsprite
+            left: -658px
+    &.down
+        .opcsprite
+            left: -987px
+    &.up
+        .opcsprite
+            left: -1316px
+    .spacer
+        display: block
+        width: 329px
+        height: 329px
+    .opcsprite
+        display: block
+        position: absolute
+        top: 0
+        left: 0
+        width: 1645px
+        height: 329px
+        &.s1
+        &.s2
+            left: -329px
+        &.s3
+            left: -658px
+
+.opc2
+    position: absolute
+    transform: scale(0.3)
+    overflow: hidden
+    visibility: visible
+    width: 100%
+    height: 329px
+    &.down2
+        .opcsprite
+            left: -0%
+    &.standby
+        .opcsprite
+            left: -329px
+    &.test
+        .opcsprite
+            left: -658px
+    &.down
+        .opcsprite
+            left: -987px
+    &.up
+        .opcsprite
+            left: -1316px
+
+/* Icons
+ *-----------------------------------------------------------------------------
+
+.icon
+    width: 2em
+    height: 2em
